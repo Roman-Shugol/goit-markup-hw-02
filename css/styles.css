@@ -147,6 +147,9 @@ header {
 }
 
 /* Portfolio section */
+.portfolio-title {
+  text-transform: capitalize;
+}
 
 /* Footer */
 .site-footer {
