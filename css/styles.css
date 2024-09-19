@@ -1,11 +1,8 @@
-/* Підключення нормалізатора */
-@import url('https://unpkg.com/modern-normalize/modern-normalize.css');
-
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
-  line-height: 1.6;
   background-color: #fff;
+  color: #212121;
+  line-height: 1.5;
   max-width: 1440px;
   max-height: 3300px;
 }
@@ -23,7 +20,7 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.72px;
   text-align: center;
   color: #2e2f42;
 }
@@ -32,29 +29,26 @@ h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.4px;
   color: #2e2f42;
 }
 
 p {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.64px;
   color: #434455;
 }
 
 a {
   text-decoration: none;
+  color: #2e2f42;
 }
 
-ul {
-  list-style: none;
-}
-
+ul,
 ol {
-  list-style: none;
+  list-style-type: none;
 }
 
-/* HEADER */
+/* Header */
 header {
   max-height: 72px;
 }
@@ -64,7 +58,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.54px;
   text-transform: uppercase;
   color: #2e2f42;
 }
@@ -76,22 +70,33 @@ header {
 .main-nav .link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.contact-info a {
-  line-height: 1.5;
+.main-nav .link:hover,
+.main-nav .link:active {
+  color: #404bbf;
+}
+
+.main-nav .link:active {
+  text-decoration: underline;
+}
+.contact-info .email-link,
+.contact-info .phone-link {
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-/*Hero section*/
+.contact-info .email-link:hover,
+.contact-info .phone-link:hover {
+  letter-spacing: 0.02em;
+  color: #404bbf;
+}
+
+/* Hero section */
 .hero-section {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
 }
 
 .hero-section button {
@@ -102,23 +107,16 @@ header {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.64px;
   color: #fff;
+  cursor: pointer;
 }
 
-/*Feature section*/
+/* Feature section */
 
-/*Team section*/
+/* Team section */
 .team {
   background-color: #f4f4fd;
-}
-
-.card-content {
-  border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
 }
 
 .teammate-name {
@@ -129,13 +127,9 @@ header {
   text-align: center;
 }
 
-/*Portfolio section*/
-.portfolio {
-  width: 1128px;
-  height: 1000px;
-}
+/* Portfolio section */
 
-/* FOOTER */
+/* Footer */
 footer {
   background-color: #2e2f42;
 }
